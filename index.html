@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Converter</title>
+</head>
+<body>
+    <div class="converter-container">
+
+<!-- inputan celcius dan tabel nya -->
+
+        <label for="celsius">Celsius (°C):</label>
+        <input type="number" id="celsius" placeholder="Enter temperature in Celsius">
+
+<!-- tombol buat konversi, reset, dan reverse -->
+        <button onclick="convertToFar()">Convert</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="reverseConversion()">Reverse</button>
+<!-- output farenheit dan tabel nya -->
+        <label for="fahrenheit">Fahrenheit (°F):</label>
+        <input type="text" id="fahrenheit" readonly>
+<!-- tombol buat nampilin rumus konversi -->
+        <button onclick="showFormula()">Lihat Rumus</button>
+        <div id="formula" style="display:none;">suhu dalam °F sama dengan suhu dalam °C <br> yaitu Celcius(°C) dikali 9/5 ditambah 32 <br><br>Suhu °F = (Suhu °C x 9/5) + 32</div>
+<!-- tombol buat nampilin hasil -->
+        <button onclick="showResult()">Lihat Hasil</button>
+        <div id="result" style="display:none;">Hasil: <span id="resultValue"></span></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
